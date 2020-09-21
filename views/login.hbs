@@ -1,7 +1,7 @@
 <div class="auth">
     <div class="container">
         {{> icon_logo}}
-        <h5 class="subheading">Welcome to this example login screen!</h5>
+        <h5 class="subheading"></h5>
 
         {{> messages messages=messages className="global"}}
 
@@ -12,9 +12,11 @@
         {{/if}}
 
         {{#if oidc}}
-            <div id="login-oidc">
-                {{> form form=oidc}}
-            </div>
+          {{#unless hydra}}
+              <div id="login-oidc">
+                  {{> form form=oidc}}
+              </div>
+          {{/unless}}
         {{/if}}
 
         <hr class="divider">

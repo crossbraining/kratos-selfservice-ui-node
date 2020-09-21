@@ -31,17 +31,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 600px;
+    width: 80%;
     margin: 0 auto;
 }
 
 .auth .container {
-    width: 300px;
+    width: 600px;
 }
 
 .logo {
+    width: 300px;
+    margin: auto;
+    text-align: center;
     pointer-events: none;
-    margin: 0 auto 2rem 0;
 }
 
 .content {
@@ -184,4 +186,9 @@ h4 ~ h5 {
 
 .container a:hover {
     color: var(--base-white);
+}
+
+.header_logo {
+  height: 100px;
+  width: 100px;
 }
